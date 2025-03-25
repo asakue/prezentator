@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Презентатор - Создание презентаций в браузере" />
+    <title>Презентатор - Создание презентаций в браузере</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Скрипт для маршрутизации GitHub Pages -->
+    <script>
+      (function() {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        
+        if (redirect && redirect !== window.location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <!-- Fallback для статического режима -->
+    <script src="/fallback.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
